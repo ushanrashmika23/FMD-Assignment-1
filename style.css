@@ -12,12 +12,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 18px;
     position: fixed;
-    width: 1380px;
+    width: 1300px;
     padding: 15px 25px;
     border-radius: 8px;
     color: #fff;
+    font-size: 1.25rem;
     /* background-color: aliceblue; */
 }
 
@@ -30,7 +31,7 @@ header .header-left {
 header .header-right {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 22px;
 }
 
 header .header-left ul {
@@ -67,17 +68,23 @@ header a:hover::after {
     display: block;
 }
 .header-right h4 {
-    padding: 10px 25px;
+    padding: 8px 25px;
     background-color: transparent;
     border: 2px solid #fff;
     border-radius: 500px;
+    cursor: pointer;
 }
-
+.header-right h4:hover {
+    background-color: #fff;
+    color: #14b789;
+    transition: .2s;
+}
 .header-right span {
     color: #000;
     background-color: #fff;
     padding: 10px;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 .scrolled {
@@ -96,14 +103,19 @@ header a:hover::after {
     color: #14b789;
     border-color: #14b789;
 }
+.scrolled .header-right h4:hover {
+    color: #fff;
+    background-color: #14b789;
+}
 .scrolled .header-right span {
     color: #fff;
     background-color: #14b789;
 }
+
 /*------------HOME------------------*/
 #home {
     position: relative;
-    height: 100vh;
+    /* height: 680px; */
     width: 100%;
     background-image: url('./img/bg.svg');
     background-repeat: no-repeat;
@@ -114,6 +126,73 @@ header a:hover::after {
 
 .home-container {
     margin: 0 auto;
-    max-width: 1380px;
+    max-width: 1300px;
     position: relative;
+}
+.home-inner{
+    height: 700px;
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-1-line{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.home-profile-img{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.home-profile-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.home-1-line h1,.home-2-line h1{
+    font-size: 2.75rem;
+    background-color: #fff;
+    padding: 10px 25px;
+    border-radius: 500px;
+    /* font-weight: 500; */
+}
+
+.home-2-line h1{
+    margin: 24px 0;
+    color: #14b789;
+}
+.home-inner button{
+    padding: 10px 25px;
+    border-radius: 500px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: none;
+    background-color: #535DA1;
+    color: #fff;
+    cursor: pointer;
+}
+.home-inner button:hover{
+    background-color: #14b789;
+    box-shadow: 0 0 30px rgba(0,0,0,.2);
+    transition: .2s;
+}
+.home-img{
+    position: relative;
+    margin-right: 50px;
+}
+.home-img img{
+    z-index: 10;
+    position: absolute;
+    width: 150%;
+    top: 50px;
+    left: -50px;
+}
+.home-circle{
+    width: 370px;
+    height: 370px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 1;
 }
