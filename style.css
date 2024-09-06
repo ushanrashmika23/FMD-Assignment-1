@@ -290,7 +290,7 @@ header a:hover::after {
 
 #experience {
     width: 100%;
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     border: 1px solid #ddddee;
 }
 
@@ -561,11 +561,13 @@ header a:hover::after {
     transition: .5s;
     box-shadow: 0 0 30px rgba(0, 0, 0, .2);
 }
+
 .services-card:hover .service-price::after {
     background-color: #535DA1;
     transition: .5s;
 }
-.services-card:hover .service-price{
+
+.services-card:hover .service-price {
     background-color: #14b789;
     transition: .5s;
 }
@@ -576,13 +578,76 @@ header a:hover::after {
     color: #fff;
     transition: .5s;
 }
-.sevices-card-wrapper{
+
+.sevices-card-wrapper {
     display: flex;
     padding: 50px 0;
 }
-.services-column{
+
+.services-column {
     flex: 1;
 }
-.services-column:nth-child(1){
+
+.services-column:nth-child(1) {
     margin-top: 80px;
+}
+
+/*--------------PROJECTS--------------*/
+#projects {
+    width: 1300px;
+    margin: 100px auto;
+    height: 800px;
+}
+
+.projects-title {
+    display: flex;
+}
+
+.projects-title-left {
+    flex: 1;
+}
+
+.project-title-right {
+    flex: 2;
+}
+
+.project-wrapper {
+    display: flex;
+    margin: 30px 0;
+}
+
+.project-card {
+    padding: 40px 30px;
+    background-color: #f8f8f8;
+    flex: 1;
+    border-radius: 18px;
+    border: 2px solid #f8f8f8;
+    margin: 10px;
+    position: relative;
+    /* height: 470px; */
+    overflow: hidden;
+}
+
+.project-card p {
+    color: #14b789;
+    font-size: .8rem;
+}
+
+.project-card h1 {
+    font-size: 2rem;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 18px;
+    margin-top: 30px;
+    transform: rotate(10deg) translateY(85px);
+}
+.project-card:hover{
+    border-color:#14b789 ;
+    transition: .5s;
+}
+.project-card:hover img{
+    transform: translateY(0) rotate(0);
+    transition: .5s;
 }
