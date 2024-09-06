@@ -643,11 +643,248 @@ header a:hover::after {
     margin-top: 30px;
     transform: rotate(10deg) translateY(85px);
 }
-.project-card:hover{
-    border-color:#14b789 ;
+
+.project-card:hover {
+    border-color: #14b789;
     transition: .5s;
 }
-.project-card:hover img{
+
+.project-card:hover img {
     transform: translateY(0) rotate(0);
     transition: .5s;
+}
+
+/* ----------------Conatct------------------- */
+#contact {
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 100px 0;
+}
+
+.contact-wrapper {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.conatct-title {
+    display: flex;
+}
+
+.contact-title-left {
+    flex: 1;
+}
+
+.contact-title-right {
+    flex: 1;
+}
+
+.contact-details {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-details h5 {
+    margin: 20px 0;
+}
+
+.contact-details ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: .9rem;
+}
+
+.contact-details ul li {
+    border: 2px solid #ddd;
+    padding: 10px;
+    border-radius: 100px;
+    color: #666;
+    cursor: pointer;
+}
+
+.social-icons li i {
+    padding: 0;
+    width: 15px;
+    height: 15px;
+    display: grid;
+    place-content: center;
+    color: #000;
+}
+
+.contact-details ul li:hover {
+    background-color: #14b789;
+    border-color: #14b789;
+    color: #fff;
+    transition: .4s;
+}
+
+.contact-details ul li:hover i {
+    color: #fff;
+    transition: .4s;
+}
+
+.contact-details p {
+    color: #666;
+}
+
+.contact-details h5 {
+    font-size: 0.75rem;
+}
+
+.contact-details-left {
+    flex: 1;
+    /* background-color: #666; */
+    display: flex;
+
+}
+
+.contact-details-left-left {
+    padding: 30px;
+    flex: 1;
+    background-color: #fff;
+}
+
+.contact-details-left-right {
+    padding: 30px;
+    flex: 1;
+    background-color: #fff;
+}
+
+.contact-details-right {
+    flex: 1;
+    /* background-color: #000; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-details-right input {
+    width: 100%;
+}
+
+.contact-details-right input,
+.contact-details-right button,
+.contact-details-right textarea {
+    border: 2px solid #ddd;
+    background-color: #fff;
+    font-size: 1rem;
+    padding: 15px;
+    flex: 1;
+    border-radius: 5px;
+    outline-color: #14b789;
+    padding-top: 20px;
+    flex: 1;
+}
+
+.contact-details-right input:hover,
+.contact-details-right button:hover,
+.contact-details-right textarea:hover {
+    border-color: #14b789;
+    transition: .4s
+}
+
+.contact-details-right button {
+    color: #666;
+}
+
+.contact-details-right button i {
+    color: #14b789;
+}
+
+.contact-details-right .btn-on{
+    border: 2px solid #14b789;
+}
+.contact-details-right p {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-sublit-button {
+    margin-top: 20px;
+}
+
+.input {
+    position: relative;
+    width: fit-content;
+    width: 100%;
+}
+
+.input label {
+    position: absolute;
+    left: 10px;
+    top: 18px;
+    color: #666;
+}
+
+.input input:focus+label {
+    top: 4px;
+    left: 3;
+    font-size: .8rem;
+    transition: .1s;
+    color: #999;
+}
+
+textarea {
+    width: 100%;
+}
+
+.input textarea:focus+label {
+    top: 4px;
+    left: 3;
+    font-size: .8rem;
+    transition: .1s;
+    color: #999;
+}
+
+.contact-input-row {
+    display: flex;
+    gap: 20px;
+}
+.contact-submit{
+    display: flex;
+    width: 100%;
+    /* background-color: #14b789; */
+    flex-direction: column;
+    align-items: end;
+}
+.contact-details button[type="submit"] {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 1000px;
+    padding: 15px 40px;
+    background-color: #14b789;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.contact-submit button:hover{
+    background-color: #535DA1;
+    transition: .4s;
+}
+
+/*-------------footer*-----------------*/
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    border-top: #ddddee 1px solid;
+    color: #666;
+    font-size: .9rem;
+}
+.footer2{
+    border-left: #dddeee 2px solid;
+    padding-left: 20px;
+}
+.footer1{
+    padding-right: 20px;
+}
+footer a{
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+}
+footer a:hover{
+    color: #14b789;
+    transition: .4s;
 }
